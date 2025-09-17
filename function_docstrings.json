@@ -1,0 +1,1697 @@
+{
+  "doc_templates.py:get_system_prompt": {
+    "signature": "def get_system_prompt(doc_style: DocStyle = DocStyle.GOOGLE) -> str:",
+    "docstring": "Get the system prompt for the documentation generation LLM.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_system_prompt",
+      "full_name": "get_system_prompt",
+      "element_type": "function",
+      "start_line": 46,
+      "end_line": 92,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "doc_style",
+          "type": "DocStyle",
+          "required": false,
+          "default": "DocStyle.GOOGLE"
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:get_function_prompt": {
+    "signature": "def get_function_prompt(context: DocumentationContext, doc_style: DocStyle = DocStyle.GOOGLE) -> str:",
+    "docstring": "Generate prompt for documenting a function.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_function_prompt",
+      "full_name": "get_function_prompt",
+      "element_type": "function",
+      "start_line": 95,
+      "end_line": 134,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "doc_style",
+          "type": "DocStyle",
+          "required": false,
+          "default": "DocStyle.GOOGLE"
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:get_class_prompt": {
+    "signature": "def get_class_prompt(context: DocumentationContext, doc_style: DocStyle = DocStyle.GOOGLE) -> str:",
+    "docstring": "Generate prompt for documenting a class.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_class_prompt",
+      "full_name": "get_class_prompt",
+      "element_type": "function",
+      "start_line": 137,
+      "end_line": 172,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "doc_style",
+          "type": "DocStyle",
+          "required": false,
+          "default": "DocStyle.GOOGLE"
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:get_method_prompt": {
+    "signature": "def get_method_prompt(context: DocumentationContext, doc_style: DocStyle = DocStyle.GOOGLE) -> str:",
+    "docstring": "Generate prompt for documenting a class method.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_method_prompt",
+      "full_name": "get_method_prompt",
+      "element_type": "function",
+      "start_line": 175,
+      "end_line": 216,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "doc_style",
+          "type": "DocStyle",
+          "required": false,
+          "default": "DocStyle.GOOGLE"
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:get_module_prompt": {
+    "signature": "def get_module_prompt(context: DocumentationContext, doc_style: DocStyle = DocStyle.GOOGLE) -> str:",
+    "docstring": "Generate prompt for documenting a module.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_module_prompt",
+      "full_name": "get_module_prompt",
+      "element_type": "function",
+      "start_line": 219,
+      "end_line": 248,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "doc_style",
+          "type": "DocStyle",
+          "required": false,
+          "default": "DocStyle.GOOGLE"
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:get_quality_assessment_prompt": {
+    "signature": "def get_quality_assessment_prompt(documentation: str, context: DocumentationContext) -> str:",
+    "docstring": "Generate prompt for assessing documentation quality.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_quality_assessment_prompt",
+      "full_name": "get_quality_assessment_prompt",
+      "element_type": "function",
+      "start_line": 251,
+      "end_line": 301,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "documentation",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:_format_parameters": {
+    "signature": "def _format_parameters(parameters: List[Dict[Any]]) -> str:",
+    "docstring": "Format parameter list for display in prompts.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "_format_parameters",
+      "full_name": "_format_parameters",
+      "element_type": "function",
+      "start_line": 304,
+      "end_line": 316,
+      "complexity_score": 4.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "parameters",
+          "type": "List[Dict[Any]]",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "doc_templates.py:get_documentation_improvement_prompt": {
+    "signature": "def get_documentation_improvement_prompt(original_doc: str, feedback: Dict[Any]) -> str:",
+    "docstring": "Generate prompt for improving documentation based on quality feedback.",
+    "metadata": {
+      "file_path": "src/tools/doc_templates.py",
+      "function_name": "get_documentation_improvement_prompt",
+      "full_name": "get_documentation_improvement_prompt",
+      "element_type": "function",
+      "start_line": 319,
+      "end_line": 341,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": true,
+      "parameters": [
+        {
+          "name": "original_doc",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "feedback",
+          "type": "Dict[Any]",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "staticmethod"
+      ],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:analyze_python_file": {
+    "signature": "def analyze_python_file(file_path: str) -> FileAnalysis:",
+    "docstring": "Convenience function to analyze a Python file.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "analyze_python_file",
+      "full_name": "analyze_python_file",
+      "element_type": "function",
+      "start_line": 400,
+      "end_line": 403,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "FileAnalysis",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:parse_file": {
+    "signature": "def parse_file(self, file_path: str) -> FileAnalysis:",
+    "docstring": "Parse a Python file and extract all code elements.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "parse_file",
+      "full_name": "parse_file",
+      "element_type": "function",
+      "start_line": 57,
+      "end_line": 64,
+      "complexity_score": 2.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "file_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "FileAnalysis",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:parse_content": {
+    "signature": "def parse_content(self, content: str, file_path: str = 'unknown') -> FileAnalysis:",
+    "docstring": "Parse Python content string and extract code elements.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "parse_content",
+      "full_name": "parse_content",
+      "element_type": "function",
+      "start_line": 66,
+      "end_line": 103,
+      "complexity_score": 8.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "content",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "file_path",
+          "type": "str",
+          "required": false,
+          "default": "'unknown'"
+        }
+      ],
+      "return_type": "FileAnalysis",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_extract_function": {
+    "signature": "def _extract_function(self, node: ast.FunctionDef, is_async: bool = False) -> CodeElement:",
+    "docstring": "Extract function/method information from AST node.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_extract_function",
+      "full_name": "_extract_function",
+      "element_type": "function",
+      "start_line": 105,
+      "end_line": 159,
+      "complexity_score": 3.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.FunctionDef",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "is_async",
+          "type": "bool",
+          "required": false,
+          "default": "False"
+        }
+      ],
+      "return_type": "CodeElement",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_extract_class": {
+    "signature": "def _extract_class(self, node: ast.ClassDef) -> CodeElement:",
+    "docstring": "Extract class information from AST node.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_extract_class",
+      "full_name": "_extract_class",
+      "element_type": "function",
+      "start_line": 161,
+      "end_line": 207,
+      "complexity_score": 5.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.ClassDef",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "CodeElement",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_build_signature": {
+    "signature": "def _build_signature(self, node: ast.FunctionDef, is_async: bool = False) -> str:",
+    "docstring": "Build function signature string.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_build_signature",
+      "full_name": "_build_signature",
+      "element_type": "function",
+      "start_line": 209,
+      "end_line": 252,
+      "complexity_score": 11.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.FunctionDef",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "is_async",
+          "type": "bool",
+          "required": false,
+          "default": "False"
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_extract_parameters": {
+    "signature": "def _extract_parameters(self, args: ast.arguments) -> List[Dict[Any]]:",
+    "docstring": "Extract parameter information.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_extract_parameters",
+      "full_name": "_extract_parameters",
+      "element_type": "function",
+      "start_line": 254,
+      "end_line": 275,
+      "complexity_score": 4.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "args",
+          "type": "ast.arguments",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "List[Dict[Any]]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_extract_return_type": {
+    "signature": "def _extract_return_type(self, node: ast.FunctionDef) -> str:",
+    "docstring": "Extract return type annotation.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_extract_return_type",
+      "full_name": "_extract_return_type",
+      "element_type": "function",
+      "start_line": 277,
+      "end_line": 281,
+      "complexity_score": 2.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.FunctionDef",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_determine_visibility": {
+    "signature": "def _determine_visibility(self, name: str) -> str:",
+    "docstring": "Determine visibility based on naming convention.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_determine_visibility",
+      "full_name": "_determine_visibility",
+      "element_type": "function",
+      "start_line": 283,
+      "end_line": 292,
+      "complexity_score": 5.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "name",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_calculate_complexity": {
+    "signature": "def _calculate_complexity(self, node: ast.AST) -> float:",
+    "docstring": "Calculate cyclomatic complexity of a function.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_calculate_complexity",
+      "full_name": "_calculate_complexity",
+      "element_type": "function",
+      "start_line": 294,
+      "end_line": 306,
+      "complexity_score": 5.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "float",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_extract_dependencies": {
+    "signature": "def _extract_dependencies(self, node: ast.AST) -> List[str]:",
+    "docstring": "Extract function calls and dependencies.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_extract_dependencies",
+      "full_name": "_extract_dependencies",
+      "element_type": "function",
+      "start_line": 308,
+      "end_line": 322,
+      "complexity_score": 6.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "List[str]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_extract_imports": {
+    "signature": "def _extract_imports(self, node: ast.AST) -> None:",
+    "docstring": "Extract import statements.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_extract_imports",
+      "full_name": "_extract_imports",
+      "element_type": "function",
+      "start_line": 324,
+      "end_line": 335,
+      "complexity_score": 7.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "None",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_get_decorator_name": {
+    "signature": "def _get_decorator_name(self, decorator: ast.AST) -> str:",
+    "docstring": "Get decorator name.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_get_decorator_name",
+      "full_name": "_get_decorator_name",
+      "element_type": "function",
+      "start_line": 337,
+      "end_line": 345,
+      "complexity_score": 4.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "decorator",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_get_annotation": {
+    "signature": "def _get_annotation(self, annotation: ast.AST) -> str:",
+    "docstring": "Get type annotation as string.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_get_annotation",
+      "full_name": "_get_annotation",
+      "element_type": "function",
+      "start_line": 347,
+      "end_line": 357,
+      "complexity_score": 5.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "annotation",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_get_default_value": {
+    "signature": "def _get_default_value(self, default: ast.AST) -> str:",
+    "docstring": "Get default value as string.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_get_default_value",
+      "full_name": "_get_default_value",
+      "element_type": "function",
+      "start_line": 359,
+      "end_line": 367,
+      "complexity_score": 4.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "default",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_get_name": {
+    "signature": "def _get_name(self, node: ast.AST) -> str:",
+    "docstring": "Get name from AST node.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_get_name",
+      "full_name": "_get_name",
+      "element_type": "function",
+      "start_line": 369,
+      "end_line": 375,
+      "complexity_score": 3.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_get_call_name": {
+    "signature": "def _get_call_name(self, func: ast.AST) -> str:",
+    "docstring": "Get function call name.",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_get_call_name",
+      "full_name": "_get_call_name",
+      "element_type": "function",
+      "start_line": 377,
+      "end_line": 383,
+      "complexity_score": 3.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "func",
+          "type": "ast.AST",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "python_ast_parser.py:_get_attribute_chain": {
+    "signature": "def _get_attribute_chain(self, node: ast.Attribute) -> str:",
+    "docstring": "Get full attribute chain (e.g., 'self.method' or 'module.function').",
+    "metadata": {
+      "file_path": "src/tools/python_ast_parser.py",
+      "function_name": "_get_attribute_chain",
+      "full_name": "_get_attribute_chain",
+      "element_type": "function",
+      "start_line": 385,
+      "end_line": 397,
+      "complexity_score": 3.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "node",
+          "type": "ast.Attribute",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "settings.py:get_db_config": {
+    "signature": "def get_db_config() -> dict:",
+    "docstring": "Get database configuration as dictionary.",
+    "metadata": {
+      "file_path": "src/config/settings.py",
+      "function_name": "get_db_config",
+      "full_name": "get_db_config",
+      "element_type": "function",
+      "start_line": 74,
+      "end_line": 82,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [],
+      "return_type": "dict",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "settings.py:connection_url": {
+    "signature": "def connection_url(self) -> str:",
+    "docstring": "Get the database connection URL.",
+    "metadata": {
+      "file_path": "src/config/settings.py",
+      "function_name": "connection_url",
+      "full_name": "connection_url",
+      "element_type": "function",
+      "start_line": 26,
+      "end_line": 30,
+      "complexity_score": 2.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [
+        "property"
+      ],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:analyze_single_file": {
+    "signature": "def analyze_single_file(file_path: str, project_id: str) -> Dict[Any]:",
+    "docstring": "Analyze a single file - convenience function.",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "analyze_single_file",
+      "full_name": "analyze_single_file",
+      "element_type": "function",
+      "start_line": 286,
+      "end_line": 289,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "file_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:analyze_project_directory": {
+    "signature": "def analyze_project_directory(project_name: str, directory_path: str) -> Dict[Any]:",
+    "docstring": "Analyze an entire project directory - convenience function.",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "analyze_project_directory",
+      "full_name": "analyze_project_directory",
+      "element_type": "function",
+      "start_line": 291,
+      "end_line": 294,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "project_name",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "directory_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:main": {
+    "signature": "def main():",
+    "docstring": "Command-line interface for the Code Analyzer Agent.",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "main",
+      "full_name": "main",
+      "element_type": "function",
+      "start_line": 297,
+      "end_line": 366,
+      "complexity_score": 15.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [],
+      "return_type": "Any",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:analyze_file": {
+    "signature": "def analyze_file(self, file_path: str, project_id: str) -> Dict[Any]:",
+    "docstring": "Analyze a single Python file and store results in database.\n\nArgs:\n    file_path: Path to the Python file to analyze\n    project_id: ID of the project this file belongs to\n\nReturns:\n    Dictionary with analysis results and statistics",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "analyze_file",
+      "full_name": "analyze_file",
+      "element_type": "function",
+      "start_line": 46,
+      "end_line": 85,
+      "complexity_score": 3.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "file_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:analyze_directory": {
+    "signature": "def analyze_directory(self, directory_path: str, project_id: str, patterns: List[str] = None) -> Dict[Any]:",
+    "docstring": "Analyze all Python files in a directory.\n\nArgs:\n    directory_path: Path to directory to analyze\n    project_id: ID of the project\n    patterns: File patterns to include (default: ['*.py'])\n\nReturns:\n    Dictionary with analysis results for all files",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "analyze_directory",
+      "full_name": "analyze_directory",
+      "element_type": "function",
+      "start_line": 87,
+      "end_line": 147,
+      "complexity_score": 8.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "directory_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "patterns",
+          "type": "List[str]",
+          "required": false,
+          "default": "None"
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:analyze_project": {
+    "signature": "def analyze_project(self, project_name: str, directory_path: str, description: str = '', repository_url: str = '') -> Dict[Any]:",
+    "docstring": "Analyze an entire project: create project record and analyze all files.\n\nArgs:\n    project_name: Name of the project\n    directory_path: Root directory of the project\n    description: Project description\n    repository_url: Git repository URL\n\nReturns:\n    Complete analysis results including project and file analysis",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "analyze_project",
+      "full_name": "analyze_project",
+      "element_type": "function",
+      "start_line": 149,
+      "end_line": 191,
+      "complexity_score": 3.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_name",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "directory_path",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "description",
+          "type": "str",
+          "required": false,
+          "default": "''"
+        },
+        {
+          "name": "repository_url",
+          "type": "str",
+          "required": false,
+          "default": "''"
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:get_analysis_summary": {
+    "signature": "def get_analysis_summary(self, project_id: str) -> Dict[Any]:",
+    "docstring": "Get a summary of analysis results for a project.",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "get_analysis_summary",
+      "full_name": "get_analysis_summary",
+      "element_type": "function",
+      "start_line": 193,
+      "end_line": 238,
+      "complexity_score": 6.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:_store_file": {
+    "signature": "def _store_file(self, analysis: FileAnalysis, project_id: str) -> str:",
+    "docstring": "Store file analysis in database.",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "_store_file",
+      "full_name": "_store_file",
+      "element_type": "function",
+      "start_line": 240,
+      "end_line": 259,
+      "complexity_score": 1.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "analysis",
+          "type": "FileAnalysis",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "code_analyzer.py:_store_elements": {
+    "signature": "def _store_elements(self, elements: List[CodeElement], file_id: str) -> List[str]:",
+    "docstring": "Store code elements in database.",
+    "metadata": {
+      "file_path": "src/agents/code_analyzer.py",
+      "function_name": "_store_elements",
+      "full_name": "_store_elements",
+      "element_type": "function",
+      "start_line": 261,
+      "end_line": 283,
+      "complexity_score": 2.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "elements",
+          "type": "List[CodeElement]",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "file_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "List[str]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:generate_docs_for_element": {
+    "signature": "def generate_docs_for_element(element_id: str, doc_style: str = 'google') -> Dict[Any]:",
+    "docstring": "Generate documentation for a single element - convenience function.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "generate_docs_for_element",
+      "full_name": "generate_docs_for_element",
+      "element_type": "function",
+      "start_line": 396,
+      "end_line": 400,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "element_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "doc_style",
+          "type": "str",
+          "required": false,
+          "default": "'google'"
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:generate_docs_for_project": {
+    "signature": "def generate_docs_for_project(project_id: str, doc_style: str = 'google') -> Dict[Any]:",
+    "docstring": "Generate documentation for an entire project - convenience function.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "generate_docs_for_project",
+      "full_name": "generate_docs_for_project",
+      "element_type": "function",
+      "start_line": 402,
+      "end_line": 406,
+      "complexity_score": 1.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "doc_style",
+          "type": "str",
+          "required": false,
+          "default": "'google'"
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:main": {
+    "signature": "def main():",
+    "docstring": "Command-line interface for the Documentation Generator Agent.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "main",
+      "full_name": "main",
+      "element_type": "function",
+      "start_line": 409,
+      "end_line": 471,
+      "complexity_score": 10.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [],
+      "return_type": "Any",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:generate_documentation_for_element": {
+    "signature": "def generate_documentation_for_element(self, element_id: str) -> Dict[Any]:",
+    "docstring": "Generate documentation for a single code element.\n\nArgs:\n    element_id: ID of the code element to document\n\nReturns:\n    Dictionary with generation results",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "generate_documentation_for_element",
+      "full_name": "generate_documentation_for_element",
+      "element_type": "function",
+      "start_line": 70,
+      "end_line": 123,
+      "complexity_score": 4.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "element_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:generate_documentation_for_file": {
+    "signature": "def generate_documentation_for_file(self, file_id: str) -> Dict[Any]:",
+    "docstring": "Generate documentation for all elements in a file.\n\nArgs:\n    file_id: ID of the file to document\n\nReturns:\n    Dictionary with generation results for all elements",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "generate_documentation_for_file",
+      "full_name": "generate_documentation_for_file",
+      "element_type": "function",
+      "start_line": 125,
+      "end_line": 186,
+      "complexity_score": 8.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "file_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:generate_documentation_for_project": {
+    "signature": "def generate_documentation_for_project(self, project_id: str) -> Dict[Any]:",
+    "docstring": "Generate documentation for all elements in a project.\n\nArgs:\n    project_id: ID of the project to document\n\nReturns:\n    Dictionary with generation results for the entire project",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "generate_documentation_for_project",
+      "full_name": "generate_documentation_for_project",
+      "element_type": "function",
+      "start_line": 188,
+      "end_line": 257,
+      "complexity_score": 8.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "project_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:improve_documentation": {
+    "signature": "def improve_documentation(self, documentation_id: str) -> Dict[Any]:",
+    "docstring": "Improve existing documentation based on quality feedback.\n\nArgs:\n    documentation_id: ID of the documentation to improve\n\nReturns:\n    Dictionary with improvement results",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "improve_documentation",
+      "full_name": "improve_documentation",
+      "element_type": "function",
+      "start_line": 259,
+      "end_line": 283,
+      "complexity_score": 3.0,
+      "visibility": "public",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "documentation_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:_get_element_by_id": {
+    "signature": "def _get_element_by_id(self, element_id: str):",
+    "docstring": "Get code element by ID from database.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "_get_element_by_id",
+      "full_name": "_get_element_by_id",
+      "element_type": "function",
+      "start_line": 285,
+      "end_line": 287,
+      "complexity_score": 1.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "element_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Any",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:_build_documentation_context": {
+    "signature": "def _build_documentation_context(self, element) -> DocumentationContext:",
+    "docstring": "Build documentation context from code element.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "_build_documentation_context",
+      "full_name": "_build_documentation_context",
+      "element_type": "function",
+      "start_line": 289,
+      "end_line": 308,
+      "complexity_score": 1.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "element",
+          "type": "Any",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "DocumentationContext",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:_extract_element_source_code": {
+    "signature": "def _extract_element_source_code(self, element) -> str:",
+    "docstring": "Extract the source code for a specific element.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "_extract_element_source_code",
+      "full_name": "_extract_element_source_code",
+      "element_type": "function",
+      "start_line": 310,
+      "end_line": 319,
+      "complexity_score": 3.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "element",
+          "type": "Any",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:_generate_documentation": {
+    "signature": "def _generate_documentation(self, context: DocumentationContext) -> str:",
+    "docstring": "Generate documentation using LLM.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "_generate_documentation",
+      "full_name": "_generate_documentation",
+      "element_type": "function",
+      "start_line": 321,
+      "end_line": 339,
+      "complexity_score": 4.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:_assess_documentation_quality": {
+    "signature": "def _assess_documentation_quality(self, documentation: str, context: DocumentationContext) -> Dict[Any]:",
+    "docstring": "Assess the quality of generated documentation.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "_assess_documentation_quality",
+      "full_name": "_assess_documentation_quality",
+      "element_type": "function",
+      "start_line": 341,
+      "end_line": 378,
+      "complexity_score": 4.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "documentation",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "Dict[Any]",
+      "decorators": [],
+      "parent_class": null
+    }
+  },
+  "doc_generator.py:_store_documentation": {
+    "signature": "def _store_documentation(self, element_id: str, documentation: str, quality_scores: Dict[Any], context: DocumentationContext) -> str:",
+    "docstring": "Store generated documentation in the database.",
+    "metadata": {
+      "file_path": "src/agents/doc_generator.py",
+      "function_name": "_store_documentation",
+      "full_name": "_store_documentation",
+      "element_type": "function",
+      "start_line": 380,
+      "end_line": 393,
+      "complexity_score": 1.0,
+      "visibility": "protected",
+      "is_async": false,
+      "is_static": false,
+      "parameters": [
+        {
+          "name": "self",
+          "type": "Any",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "element_id",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "documentation",
+          "type": "str",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "quality_scores",
+          "type": "Dict[Any]",
+          "required": true,
+          "default": null
+        },
+        {
+          "name": "context",
+          "type": "DocumentationContext",
+          "required": true,
+          "default": null
+        }
+      ],
+      "return_type": "str",
+      "decorators": [],
+      "parent_class": null
+    }
+  }
+}

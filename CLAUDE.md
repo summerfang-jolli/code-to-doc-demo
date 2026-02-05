@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Introduction
+This is a test
+
 ## Project Overview
 
 This is a **Code-to-Documentation AI Agent System** that uses LangGraph to orchestrate the conversion of source code into comprehensive documentation, with PostgreSQL vector storage for RAG capabilities.
